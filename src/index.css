@@ -5,20 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("Assets/Images/pexels-photo-1089462.webp");
+  width: 100vw;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.todoBox {
+  width: 70%;
+  margin: 0 auto;
+}
 .title {
   text-align: center;
-  margin: 40px 0;
-  color: darkslategrey;
+  margin: 60px 0 40px;
+  color: white;
+  text-transform: uppercase;
 }
 .text {
   margin-left: 10px;
 }
 input:checked + span {
   text-decoration: line-through;
+}
+@media (max-width: 990px) {
+  .todoBox {
+    width: 100%;
+  }
 }

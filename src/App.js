@@ -34,9 +34,9 @@ function App() {
 
     return (
     <div className="container">
-        <div className='row'>
-            <div className="col-6 offset-3">
-                <h1 className="title">To Do List</h1>
+        <div className='todoBlock'>
+            <div className="todoBox">
+                <h1 className="title">Todo List</h1>
                 <div className="input-group mb-5">
                     <input type="text"
                            onChange={handleChange}
@@ -45,7 +45,7 @@ function App() {
                            placeholder="Edd todo"
                            aria-label="todo"
                            aria-describedby="button-addon2"/>
-                    <button type="button" className="btn btn-outline-danger" onClick={handleClick}>Add todo</button>
+                    <button type="button" className="btn btn-danger" onClick={handleClick}>Add todo</button>
                 </div>
                 <div>
                     {
@@ -59,7 +59,7 @@ function App() {
                                     />
                                     <span className="text">{item.text}</span>
                                 </div>
-                                <button className="btn btn-outline-secondary" onClick={() => handleDelete(item.id)} type="button">Delete</button>
+                                <button className="btn btn-secondary" onClick={() => handleDelete(item.id)} type="button">Delete</button>
                             </div>
                         )
                     }
