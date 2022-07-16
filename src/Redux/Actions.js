@@ -44,8 +44,9 @@ export const deleteTodo = (id) => {
 
 export const isDone = (id) => {
     return (dispatch, getState) => {
-        return axios.get(`${apiUrl}`)
+        return axios.put(`${apiUrl}/${id}`)
             .then(res => {
+                console.log(res.data)
                 dispatch ({
                     type: 'COMPLETE_ITEM',
                     payload: getState().todos.map((item) => {

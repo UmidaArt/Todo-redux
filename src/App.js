@@ -42,7 +42,7 @@ function App() {
                            onChange={handleChange}
                            value={todo}
                            className="form-control"
-                           placeholder="Edd todo"
+                           placeholder="Add todo"
                            aria-label="todo"
                            aria-describedby="button-addon2"/>
                     <button type="button" className="btn btn-danger" onClick={handleClick}>Add todo</button>
